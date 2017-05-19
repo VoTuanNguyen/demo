@@ -1,4 +1,4 @@
-package com.hellokoding.springboot.Connect;
+package com.hellokoding.springboot.data;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
