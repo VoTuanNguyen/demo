@@ -32,7 +32,7 @@ public class HelloController {
     @ResponseBody 
     public String uploadck(Model model,@RequestParam("noidung") String noidung) {
     	try{
-	    	adapter set = new adapter();
+	    	ConnectDB set = new ConnectDB();
 	    	set.UpdateContent(noidung);
 	    	return "Thành công!!!";
     	}
