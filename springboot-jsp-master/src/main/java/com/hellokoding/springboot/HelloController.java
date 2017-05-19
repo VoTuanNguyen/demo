@@ -21,7 +21,8 @@ public class HelloController {
         return "test";
     }
     @RequestMapping("/ckeditor")
-    public String editor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
+    public String editor(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) 
+			throws Exception {
     	ConnectDB get = new ConnectDB();
     	String noidung = get.GetContent();
         model.addAttribute("text",noidung);
